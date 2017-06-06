@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aubuchon.invoicetotal.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/_subTotalLabel"
+        android:id="@+id/subTotalLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="35sp"
+        android:textIsSelectable="false"
+        android:textColor="#fe020f" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/_percentLabel"
+        android:id="@+id/percentLabel"
+        android:layout_below="@+id/subTotalLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:textColor="#0022ff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/_percentAmountLabel"
+        android:id="@+id/percentAmountLabel"
+        android:layout_below="@+id/percentLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:textColor="#0022ff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/total_label"
+        android:id="@+id/totalLabel"
+        android:layout_below="@+id/percentAmountLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp"
+        android:textColor="#ae212a"
+        android:textSize="35sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button"
+        android:id="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="40sp"
+        android:background="#129f08" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/subTotalET"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/resetButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TotalTV"
+        android:layout_alignEnd="@+id/subTotalET"
+        android:layout_alignTop="@+id/totalLabel"
+        android:layout_toEndOf="@+id/resetButton"
+        android:text="@string/_TotalTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/_percentAmountTV"
+        android:id="@+id/percentAmountTV"
+        android:layout_above="@+id/totalLabel"
+        android:layout_alignStart="@+id/TotalTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/discountPercentTV"
+        android:id="@+id/percentTV"
+        android:layout_alignTop="@+id/percentLabel"
+        android:layout_alignStart="@+id/percentAmountTV" />
+</RelativeLayout>

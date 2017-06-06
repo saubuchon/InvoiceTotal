@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InvoiceTotal</string>
+    <string name="reset_button">Reset</string>
+    <string name="total_label">Total</string>
+    <string name="discountPercentTV">$0.00</string>
+    <string name="_percentAmountTV">$0.00</string>
+    <string name="_TotalTV">$0.00</string>
+    <string name="_percentAmountLabel">Discount Amount</string>
+    <string name="_percentLabel">Discount Percent</string>
+    <string name="_subTotalLabel">Sub Total</string>
+</resources>
